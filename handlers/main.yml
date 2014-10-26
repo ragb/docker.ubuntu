@@ -3,6 +3,6 @@
 - name: Start Docker
   service: name=docker state=started
 
-- name: Reload ufw
+- name: Reload UFW
   ufw: state=reloaded
 
