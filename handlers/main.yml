@@ -2,3 +2,7 @@
 # handlers file for docker.ubuntu
 - name: Start Docker
   service: name=docker state=started
+
+- name: Reload ufw
+  ufw: state=reloaded
+
